@@ -400,4 +400,220 @@ Além disso, a dosagem deve considerar o tipo de camada (rolamento, binder, base
       }
     ]
   }
+  ,
+{
+  id: "tipos_pavimentos",
+  titulo: "12. Tipos de Pavimentos",
+  secoes: [
+    {
+      titulo: "12.1 Classificação Geral",
+      texto: `Os pavimentos podem ser classificados em função do comportamento estrutural e do tipo de revestimento. As principais categorias são: pavimentos flexíveis, rígidos, semi-rígidos e invertidos. A escolha do tipo adequado depende do tráfego, das características do subleito, dos materiais disponíveis e do custo.`
+    },
+    {
+      titulo: "12.2 Pavimentos Flexíveis",
+      texto: `São aqueles em que o revestimento asfáltico (concreto betuminoso) é relativamente fino e as camadas inferiores (base, sub-base) são constituídas por materiais granulares ou estabilizados granularmente. A deformação por flexão da estrutura ocorre sob a ação das cargas, e a distribuição de tensões depende da rigidez de cada camada.
+
+Características:
+• Revestimento betuminoso (CAP ou emulsão)
+• Base e sub-base granulares ou de solo melhorado
+• Baixa rigidez à flexão
+• Vida útil de projeto normalmente entre 10 e 15 anos para restauração
+
+Aplica-se em grande parte das rodovias brasileiras, especialmente em tráfego leve a médio e onde há disponibilidade de materiais granulares.`
+    },
+    {
+      titulo: "12.3 Pavimentos Rígidos",
+      texto: `Os pavimentos rígidos utilizam placas de concreto de cimento Portland como camada de revestimento e estrutural. As placas trabalham predominantemente à flexão, distribuindo as cargas para uma área maior, o que reduz as tensões no subleito.
+
+Características:
+• Elevada rigidez e resistência à tração na flexão
+• Vida útil longa (20 a 40 anos)
+• Maior custo inicial, mas menor manutenção
+• Requer juntas de dilatação e transferência de cargas
+
+São indicados para rodovias de alto tráfego, terminais de contêineres, aeroportos e trechos com subleito de baixa capacidade de suporte.`
+    },
+    {
+      titulo: "12.4 Pavimentos Semi-Rígidos",
+      texto: `Nesses pavimentos, a base é tratada com cimento ou outro aglomerante hidráulico, conferindo rigidez intermediária entre uma base granular e uma placa de concreto. O revestimento asfáltico (CBUQ) atua como camada de desgaste e impermeabilização.
+
+Características:
+• Base com alto módulo de resiliência (ex.: solo-cimento, brita graduada tratada com cimento)
+• Bom desempenho estrutural
+• Custo intermediário
+• Susceptibilidade a trincas por reflexão se a base fraturar
+
+Utilizado em trechos com tráfego pesado e quando se deseja uma base mais rígida que a granular, mas sem o custo do pavimento rígido.`
+    },
+    {
+      titulo: "12.5 Pavimentos Invertidos",
+      texto: `No pavimento invertido, a camada imediatamente abaixo do revestimento é granular (de maior rigidez) e sobre ela é colocada uma camada de transição (filtro) antes de uma camada inferior tratada com cimento. A inversão ocorre porque a camada mais rígida (tratada) fica abaixo da granular.
+
+Características:
+• Elevada capacidade estrutural
+• Redução da espessura total
+• Minimização de trincas reflexivas
+• Mais complexo de projetar e executar
+
+É uma solução interessante para subleitos muito moles ou cargas excepcionais.`
+    }
+  ]
+},
+{
+  id: "metodos_executivos",
+  titulo: "13. Métodos Executivos – Construção de Pavimentos Asfálticos",
+  secoes: [
+    {
+      titulo: "13.1 Produção da Mistura Asfáltica a Quente (USINAGEM)",
+      texto: `A mistura asfáltica a quente é produzida em usinas de asfalto, que podem ser do tipo estacionárias ou móveis. O processo envolve:
+
+• **Secagem e aquecimento dos agregados**: em tambor secador, com controle de umidade e temperatura (140-180°C).
+• **Dosagem**: por balanças ou sistemas automáticos, conforme curva granulométrica e teor de CAP definidos em projeto.
+• **Mistura**: em misturador (descontínuo ou contínuo), onde o CAP aquecido (140-160°C) é incorporado aos agregados.
+• **Armazenamento**: o material é estocado em silos aquecidos para transporte.
+
+A usinagem deve garantir homogeneidade, temperatura adequada e evitar degradação dos agregados ou envelhecimento precoce do CAP.`
+    },
+    {
+      titulo: "13.2 Transporte",
+      texto: `O transporte da mistura da usina até o local da aplicação é feito por caminhões basculantes com lona térmica (para redução da perda de temperatura). O tempo entre a usinagem e a compactação deve ser controlado para que a mistura chegue com temperatura mínima de compactação (normalmente 110-130°C, dependendo do CAP e da espessura).`
+    },
+    {
+      titulo: "13.3 Espalhamento (Vibroacabadora)",
+      texto: `A vibroacabadora (paver) recebe a mistura, distribui sobre a pista e realiza a pré-compactação por meio de uma mesa vibratória. O controle da velocidade e da altura do material garante a espessura e a regularidade da camada. Equipamentos modernos possuem sistema de nível laser e controle eletrônico de espessura.`
+    },
+    {
+      titulo: "13.4 Compactação",
+      texto: `A compactação é a etapa mais crítica para obter a densidade e a estrutura de vazios adequadas. Utilizam-se rolos:
+
+• **Rolo de pneus**: aplica pressão de amassamento, confinamento e fechamento da superfície.
+• **Rolo liso vibratório**: fornece energia de vibração para densificação das camadas mais profundas.
+• **Rolo tandem**: acabamento final e eliminação de marcas.
+
+O número de passadas, a temperatura de compactação e a sequência de equipamentos são definidos em plano de compactação. O grau de compactação deve atender ao especificado (geralmente ≥ 97% da densidade de referência Marshall).`
+    },
+    {
+      titulo: "13.5 Tratamentos Superficiais e Revestimentos Delgados",
+      texto: `Além do CBUQ, existem outros métodos executivos:
+
+• **Tratamento superficial simples (TSS)**: aplicação de ligante (emulsão ou CAP diluído) seguido de agregado, com compactação. Usado em pavimentos de baixo volume de tráfego.
+• **Tratamento superficial duplo (TSD)**: duas camadas consecutivas de ligante e agregado, conferindo maior durabilidade.
+• **Microrevestimento asfáltico**: mistura a frio (emulsão modificada, agregado miúdo, filler, água e aditivos) aplicada com espalhadeira específica; utilizado para restauração de superfície.
+• **Capa selante**: fina camada de ligante com areia para impermeabilização e rejuvenescimento.`
+    },
+    {
+      titulo: "13.6 Reciclagem de Pavimentos",
+      texto: `A reciclagem de pavimentos asfálticos é uma prática sustentável que reaproveita o material fresado (RAP). Pode ser:
+
+• **A quente**: realizada em usina, onde o RAP é incorporado à nova mistura com adição de CAP novo e agregados.
+• **A frio**: executada no local, com equipamentos que fresam, misturam emulsão ou espuma de CAP e compactam a nova camada.
+
+A reciclagem reduz custos, preserva recursos naturais e evita a disposição inadequada de resíduos.`
+    }
+  ]
+},
+{
+  id: "controle_tecnologico",
+  titulo: "14. Controle Tecnológico da Qualidade",
+  secoes: [
+    {
+      titulo: "14.1 Importância e Plano de Controle",
+      texto: `O Controle Tecnológico (CT) é um conjunto de atividades que visa verificar a conformidade dos materiais, da execução e do produto final com as especificações do projeto e normas técnicas. Deve ser previsto em um Plano de Controle Tecnológico (PCT), definindo:
+
+• Pontos de amostragem e frequência
+• Ensaios a serem realizados
+• Critérios de aceitação e rejeição
+• Responsabilidades e rastreabilidade`
+    },
+    {
+      titulo: "14.2 Controle de Materiais",
+      texto: `• **Agregados**: granulometria, abrasão Los Angeles, equivalente de areia, forma (índice de forma), adesividade, materiais pulverulentos.
+• **Ligantes**: penetração, ponto de amolecimento, viscosidade, ponto de fulgor, ductilidade, ensaios PG quando especificado.
+• **Aditivos e polímeros**: conformidade com as especificações técnicas.`
+    },
+    {
+      titulo: "14.3 Controle de Produção (Usina)",
+      texto: `Durante a usinagem, devem ser monitorados:
+
+• **Temperaturas** do CAP e dos agregados.
+• **Dosagem** (balanças calibradas).
+• **Granulometria** e teor de CAP por extração (ensaio de extração quantitativa).
+• **Massa específica teórica** máxima (Rice) e **compactação Marshall** para verificar as propriedades da mistura.
+
+A frequência de amostragem segue normas (ex.: DNIT 031/2006) ou estabelecida no PCT.`
+    },
+    {
+      titulo: "14.4 Controle de Execução em Campo",
+      texto: `Durante a execução da camada asfáltica:
+
+• **Temperatura** da mistura no caminhão, na vibroacabadora e antes da compactação.
+• **Espessura** da camada (medições com trado, ou por controle de nível).
+• **Regularidade longitudinal** (ensaios com régua de 3 m, perfilômetro laser).
+• **Regularidade transversal** (abacaxi, inclinação).
+• **Grau de compactação**: amostragem para determinação da densidade (método nuclear ou corpos de prova extraídos com trado).
+• **Aderência entre camadas** (quando aplicável).
+• **Aspecto superficial** (ausência de exsudação, desagregação, trincas).`
+    },
+    {
+      titulo: "14.5 Aceitação e Não Conformidades",
+      texto: `Os resultados dos ensaios são comparados com os limites de especificação. Quando um lote não atende aos critérios, podem ser adotadas:
+
+• **Correção em tempo real**: ajuste de dosagem, temperatura ou processo.
+• **Rejeição parcial** (retirada da camada executada).
+• **Aceitação condicional** (mediante justificativa técnica e compensação, como desconto no pagamento).
+
+O controle tecnológico é essencial para garantir a vida útil do pavimento e para a análise de garantia contratual.`
+    }
+  ]
+},
+{
+  id: "metodologias_projeto",
+  titulo: "15. Metodologias de Projeto de Pavimentos",
+  secoes: [
+    {
+      titulo: "15.1 Introdução ao Dimensionamento",
+      texto: `O projeto de pavimentos visa definir as espessuras das camadas (revestimento asfáltico, base, sub-base, reforço do subleito) para suportar as solicitações do tráfego ao longo da vida útil, respeitando o estado limite de fadiga e deformação permanente. As metodologias evoluíram de métodos empíricos para métodos mecanísticos-empíricos.`
+    },
+    {
+      titulo: "15.2 Método do DNER/DNIT (Empírico)",
+      texto: `Até recentemente, o Brasil utilizava o método empírico do DNER (projeto de pavimentos flexíveis – norma DNER 086/1989). Baseia-se no número N (solicitações do eixo padrão de 8,2 tf) e no CBR do subleito. As espessuras são determinadas por ábacos e fórmulas empíricas que consideram a equivalência estrutural entre camadas.
+
+Embora simples, esse método não considera as propriedades mecânicas dos materiais (módulos) nem a fadiga. Ainda é utilizado em projetos de baixo a médio porte.`
+    },
+    {
+      titulo: "15.3 Método AASHTO 1993 (Empírico)",
+      texto: `O método da AASHTO (American Association of State Highway and Transportation Officials) é empírico, baseado em equações de desempenho e no conceito de Número Estrutural (SN). Considera o tráfego (W18), a serventia (PSI), o CBR ou módulo resiliente do subleito e coeficientes de camada. É amplamente utilizado na América Latina e permite dimensionar tanto pavimentos flexíveis quanto rígidos.
+
+Embora ainda seja empírico, incorpora variáveis de desempenho e é mais flexível que o método DNIT.`
+    },
+    {
+      titulo: "15.4 Métodos Mecanísticos-Empíricos",
+      texto: `Esses métodos utilizam a teoria das camadas elásticas para calcular tensões, deformações e deslocamentos na estrutura do pavimento. Os principais critérios são:
+
+• **Fadiga do revestimento asfáltico**: limitar a deformação específica de tração na fibra inferior do revestimento (ε_t) para evitar trincas.
+• **Deformação permanente no subleito**: limitar a deformação específica de compressão vertical (ε_z) para evitar afundamento plástico excessivo.
+
+Os modelos de dano são calibrados com experimentos de pista. Exemplos:
+• **MeDiNa (Mecanístico-Determinístico de Dimensionamento Nacional)**: método brasileiro desenvolvido pelo DNIT, que emprega módulos resilientes e parâmetros de fadiga e deformação permanente. É a metodologia oficial para projetos de alto volume de tráfego.
+• **AASHTOWare Pavement ME (MEPDG)**: metodologia norte-americana que substitui a AASHTO 1993, com modelos mecanísticos-empíricos e simulação de clima, tráfego e materiais.`
+    },
+    {
+      titulo: "15.5 Coleta de Dados e Parâmetros de Projeto",
+      texto: `Independentemente do método, são necessários:
+
+• **Tráfego**: número de eixos equivalentes (N ou ESALs), distribuição por eixos, pressão de enchimento, velocidade.
+• **Subleito**: CBR ou módulo resiliente (obtido por ensaios triaxiais ou correlações).
+• **Camadas estruturais**: módulos resilientes dos materiais (granulares, solo-cimento, misturas asfálticas) determinados em laboratório ou por correlações.
+• **Clima**: para métodos mecanísticos, dados de temperatura e precipitação influenciam as propriedades dos materiais.
+
+O projeto bem elaborado é a base para um pavimento durável e de baixo custo de manutenção.`
+    },
+    {
+      titulo: "15.6 Considerações Finais",
+      texto: `A escolha da metodologia deve ser adequada à importância da rodovia, ao volume de tráfego e à disponibilidade de dados. Para grandes empreendimentos, recomenda-se o uso de métodos mecanísticos-empíricos, que proporcionam maior confiabilidade e otimização das espessuras. O projeto também deve contemplar detalhes como drenagem, interseções, juntas e dispositivos de segurança.`
+    }
+  ]
+}
+
+  
 ];
