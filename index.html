@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Pavimentix</title>
+<meta charset="UTF-8">
+<title>Pavimentix</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <link rel="stylesheet" href="./src/styles/base.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="./src/styles/base.css">
 </head>
 
 <body class="flex h-screen bg-slate-50">
 
-<!-- SIDEBAR -->
-<aside class="w-72 bg-white border-r p-6">
+<aside class="w-72 bg-white border-r p-6 overflow-y-auto">
   <h1 class="text-xl font-bold mb-6">Pavimentix</h1>
 
-  <button onclick="openModule('cap')" class="nav-btn">CAP</button>
-  <button onclick="openModule('ligantes')" class="nav-btn">Ligantes</button>
-  <button onclick="openModule('propriedades')" class="nav-btn">Propriedades</button>
-  <button onclick="openModule('ensaios')" class="nav-btn">Ensaios</button>
-  <button onclick="openModule('dosagem')" class="nav-btn">Dosagem</button>
+  <div id="menu"></div>
 </aside>
 
-<!-- CONTEÚDO -->
 <main id="content" class="flex-1 p-8 overflow-y-auto">
   <h1 class="text-3xl font-bold">Selecione um módulo</h1>
 </main>
