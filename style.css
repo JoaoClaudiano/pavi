@@ -1,0 +1,36 @@
+.section { display: none; }
+.section.active { display: block; }
+
+.nav-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.nav-btn.active {
+  background: #2563eb;
+  color: white;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.btn {
+  background: #0f172a;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f1f5f9;
+}
