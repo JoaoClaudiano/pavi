@@ -1,4 +1,4 @@
-export function render(modulo) {
+export function renderModulo(modulo) {
   const container = document.getElementById("content")
 
   container.innerHTML = `
@@ -6,7 +6,7 @@ export function render(modulo) {
 
     ${modulo.secoes.map(sec => `
       <div class="card">
-        <h3 class="text-xl font-bold mb-2">${sec.titulo}</h3>
+        <div class="section-title">${sec.titulo}</div>
         <p class="text-slate-600 whitespace-pre-line">${sec.texto}</p>
       </div>
     `).join("")}
