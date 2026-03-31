@@ -3,97 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>Pavimentix</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./src/styles/base.css">
 </head>
 
-<body class="flex h-screen bg-slate-50 text-slate-800">
+<body class="flex h-screen bg-slate-50">
 
 <!-- SIDEBAR -->
-<aside class="w-64 bg-white border-r p-6 space-y-3">
-  <h1 class="font-bold text-xl mb-4">Pavimentix</h1>
+<aside class="w-72 bg-white border-r p-6">
+  <h1 class="text-xl font-bold mb-6">Pavimentix</h1>
 
-  <button onclick="switchTab('learn')" id="nav-learn" class="nav-btn active">Aprender</button>
-  <button onclick="switchTab('lab')" id="nav-lab" class="nav-btn">Laboratório</button>
-  <button onclick="switchTab('quiz')" id="nav-quiz" class="nav-btn">Quiz</button>
-  <button onclick="switchTab('progress')" id="nav-progress" class="nav-btn">Progresso</button>
+  <button onclick="openModule('cap')" class="nav-btn">CAP</button>
+  <button onclick="openModule('ligantes')" class="nav-btn">Ligantes</button>
+  <button onclick="openModule('propriedades')" class="nav-btn">Propriedades</button>
+  <button onclick="openModule('ensaios')" class="nav-btn">Ensaios</button>
+  <button onclick="openModule('dosagem')" class="nav-btn">Dosagem</button>
 </aside>
 
-<!-- MAIN -->
-<main class="flex-1 p-6 overflow-y-auto">
-
-<!-- LEARN -->
-<section id="section-learn" class="section active">
-  <h1 class="text-3xl font-bold mb-6">Materiais Betuminosos</h1>
-
-  <div class="grid md:grid-cols-2 gap-6">
-
-    <div class="card">
-      <h3 class="title">CAP</h3>
-      <p>Material viscoelástico usado na pavimentação.</p>
-      <button onclick="abrirLab('ip')" class="btn mt-3">Testar no Lab</button>
-    </div>
-
-    <div class="card">
-      <h3 class="title">Ensaios</h3>
-      <p>Penetração, ductilidade e viscosidade.</p>
-      <button onclick="switchTab('quiz')" class="btn mt-3">Fazer Quiz</button>
-    </div>
-
-  </div>
-</section>
-
-<!-- LAB -->
-<section id="section-lab" class="section">
-  <h1 class="text-2xl font-bold mb-4">Laboratório</h1>
-
-  <select onchange="changeExperiment(this.value)" class="input mb-4">
-    <option value="ip">Índice de Penetração</option>
-    <option value="viscosidade">Viscosidade</option>
-  </select>
-
-  <div class="card mb-4">
-    <input id="input1" type="number" class="input" placeholder="Valor 1">
-    <input id="input2" type="number" class="input mt-2" placeholder="Valor 2">
-
-    <button onclick="calcular()" class="btn mt-3">Calcular</button>
-  </div>
-
-  <div class="card">
-    <p id="resultado"></p>
-    <canvas id="grafico" height="100"></canvas>
-  </div>
-</section>
-
-<!-- QUIZ -->
-<section id="section-quiz" class="section">
-  <h1 class="text-2xl font-bold mb-4">Quiz</h1>
-
-  <div class="card">
-    <p id="pergunta"></p>
-    <div id="opcoes" class="space-y-2 mt-3"></div>
-    <p id="feedback" class="mt-3 font-bold"></p>
-    <p id="explicacao" class="text-sm text-slate-500"></p>
-  </div>
-</section>
-
-<!-- PROGRESS -->
-<section id="section-progress" class="section">
-  <h1 class="text-2xl font-bold mb-4">Progresso</h1>
-
-  <div class="card">
-    <p id="score"></p>
-    <p id="progresso"></p>
-  </div>
-</section>
-
+<!-- CONTEÚDO -->
+<main id="content" class="flex-1 p-8 overflow-y-auto">
+  <h1 class="text-3xl font-bold">Selecione um módulo</h1>
 </main>
 
-<script src="app.js"></script>
+<script type="module" src="./src/app.js"></script>
 </body>
 </html>
