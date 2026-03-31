@@ -1,7 +1,16 @@
 import { fundamentos } from "./data/fundamentos.js"
-import { render } from "./components/viewer.js"
+import { renderModulo } from "./components/viewer.js"
 
-window.openModule = function(nome) {
-  const modulo = fundamentos[nome]
-  render(modulo)
-}
+const menu = document.getElementById("menu")
+
+fundamentos.forEach(mod => {
+  const btn = document.createElement("button")
+  btn.innerText = mod.titulo
+  btn.className = "nav-btn"
+
+  btn.onclick = () => {
+    renderModulo(mod)
+  }
+
+  menu.appendChild(btn)
+})
